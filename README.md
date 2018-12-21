@@ -9,3 +9,9 @@ Terraform scripts to setup blockchain nodes on AWS ECS with autoscaling configur
 - Ripple
 - Ethereum Parity Client
 - 
+
+
+
+License
+-------
+MIT
