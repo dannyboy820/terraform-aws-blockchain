@@ -1,0 +1,25 @@
+[
+    {
+        "name": "bitcoin-setup",
+        "image": "kylemanna/bitcoind",
+        "cpu": 2,
+        "memory": 6144,
+        "portMappings": [
+            {
+                "containerPort":  8333,
+                "hostPort": 8333,
+                "protocol": "tcp"
+            },
+            {
+                "containerPort": 8332,
+                "hostPort": 8332,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "entryPoint": [
+        ],
+        "volumes": [
+        ]
+    }
+]

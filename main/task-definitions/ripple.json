@@ -1,0 +1,29 @@
+[
+    {
+        "name": "ripple-setup",
+        "image": "xrptipbot/rippledvalidator",
+        "cpu": 6,
+        "memory": 30720,
+        "portMappings": [
+            {
+                "containerPort": 51235,
+                "hostPort": 51235,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "entryPoint": [
+
+        ],
+        "volumes": [
+            {
+                "name": "ripple",
+                "host": {
+                    "sourcePath": "/home/ripple/",
+                    "containerPath": "/keystore/"
+                }
+            }
+        ]
+    }
+]
+

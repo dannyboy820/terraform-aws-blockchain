@@ -1,0 +1,30 @@
+[
+    {
+        "name": "ethereum-setup",
+        "image": "ethereum/client-go",
+        "cpu": 2,
+        "memory": 6144,
+        "portMappings": [
+            {
+                "containerPort": 30303,
+                "hostPort": 30303,
+                "protocol": "tcp"
+            },
+            {
+                "containerPort": 8545,
+                "hostPort": 8545,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "volumes": [
+            {
+                "name": "ethereum",
+                "host": {
+                    "sourcePath": "/home/ethereum/",
+                    "containerPath": "/root/.ethereum ethereum/client-go"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "name": "bitcoin-cash-setup",
+        "image": "uphold/bitcoin-abc:0.15-alpine",
+        "portMappings": [
+            {
+                "containerPort":  8333,
+                "hostPort": 8333,
+                "protocol": "tcp"
+            },
+            {
+                "containerPort": 8332,
+                "hostPort": 8332,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "entryPoint": [
+
+        ],
+        "volumes": [
+        ]
+    }
+]
