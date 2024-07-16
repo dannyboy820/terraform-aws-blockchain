@@ -1,4 +1,4 @@
-# WIP - terraform-aws-blockchain
+# Terraform-aws-blockchain
 
 Terraform scripts to setup blockchain nodes on AWS ECS with autoscaling configured.
 
@@ -8,10 +8,3 @@ Terraform scripts to setup blockchain nodes on AWS ECS with autoscaling configur
 - Bitcoin Cash
 - Ripple
 - Ethereum Parity Client
-- 
-
-
-
-License
--------
-MIT
